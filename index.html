@@ -1,0 +1,54 @@
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flex-splitter-directive@0.4.0/styles.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flex-splitter-directive@0.4.0"></script>
+-->
+
+<body
+  data-flex-splitter-vertical
+  style="height: 100vh; margin: 0;"
+>
+  <header style="max-height: 100px;">
+    header (max-height: 100px)
+  </header>
+
+  <div role="separator" tabindex="1"></div>
+
+  <main
+    data-flex-splitter-horizontal
+    style="flex: auto;"
+  >
+    <div style="width: 120px;">
+      width: 120px
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div
+       data-flex-splitter-vertical
+       style="min-width: 80px;"
+     >
+      <div style="height: 4em;">min-width: 80px</div>
+      <div role="separator" tabindex="1"></div>
+      <div style="flex: auto;">flex: auto</div>
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div style="flex: auto;">
+      flex: auto
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div style="min-width: 100px; max-width: 200px;">
+      min-width: 100px<br>max-width: 200px
+    </div>
+  </main>
+
+  <div role="separator" tabindex="1"></div>
+
+  <footer>footer</footer>
+  <script type="module" src="/main.js"></script>
+
+</body>
+
